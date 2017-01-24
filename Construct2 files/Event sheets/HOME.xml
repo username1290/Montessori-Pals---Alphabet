@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>HOME</name>
+    <events>
+        <include>CODESHEET</include>
+        <variable constant="0" name="ButtonPressedSendsToLayout" sid="2107448934350674" static="0" type="number">99</variable>
+        <event-block sid="5883320179050097">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7183331424141605" type="System" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="2" name="Stop" sid="7772641462293893" type="Sprite00MainFrames" />
+                <action id="2" name="Set at X" sid="6076403242606951" type="ArrayGoToLayout">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Value">&quot;CountUpward&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="2452112620242688" type="ArrayGoToLayout">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">&quot;DifferentOne&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="3915933171089648" type="ArrayGoToLayout">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Value">&quot;PathHome&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="8450875619853433" type="ArrayGoToLayout">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Value">&quot;Sounds01&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="7055663806154854" type="ArrayGoToLayout">
+                    <param id="0" name="X">4</param>
+                    <param id="1" name="Value">&quot;ABC Buttons&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="5282785798273039" type="ArrayGoToLayout">
+                    <param id="0" name="X">5</param>
+                    <param id="1" name="Value">&quot;DrawLetters&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="5051364242392538" type="ArrayGoToLayout">
+                    <param id="0" name="X">6</param>
+                    <param id="1" name="Value">&quot;PersonalSpace&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="6825021039396251" type="ArrayGoToLayout">
+                    <param id="0" name="X">7</param>
+                    <param id="1" name="Value">&quot;ssImAngry&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="3677794260639544" type="ArrayGoToLayout">
+                    <param id="0" name="X">8</param>
+                    <param id="1" name="Value">&quot;GlassesFull&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="8620898558932926" type="Sprite00MainFrames">
+                    <param id="0" name="Frame number">self.ID</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="5274329683897046">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>These buttons send to their activity</comment>
+        <event-block sid="4242522002409189">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9483375908600727" type="Touch">
+                    <param id="0" name="Object">Sprite00MainFrames</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="4240150225678155" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="1246111631128751" type="System">
+                    <param id="0" name="Variable">ButtonPressedSendsToLayout</param>
+                    <param id="1" name="Value">Sprite00MainFrames.ID</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="7562380592510458">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="3248542393288869" type="Sprite00MainFrames">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">ButtonPressedSendsToLayout</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="9030613630155503" type="System">
+                            <param id="0" name="Layout">ArrayGoToLayout.At(ButtonPressedSendsToLayout)</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="8070355614277435" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2419628920853608">
+            <conditions>
+                <condition id="-15" name="Is group active" sid="2860929944080519" type="System">
+                    <param id="0" name="Group name">&quot;CREATE-GUI&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7991875950069317" type="btnBackButton" />
+                <action id="-9" name="Destroy" sid="9239306145134674" type="btnRestartLayout" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

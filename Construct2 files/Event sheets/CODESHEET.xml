@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>CODESHEET</name>
+    <events>
+        <event-block sid="5501885396284127">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2690315217140563" type="System" />
+            </conditions>
+            <actions>
+                <action id="-7" name="Scroll to position" sid="7136005667903608" type="System">
+                    <param id="0" name="X">LayoutWidth/2</param>
+                    <param id="1" name="Y">LayoutHeight/2</param>
+                </action>
+            </actions>
+        </event-block>
+        <variable comment="Holds SpriteToClick Angle VALUE" constant="0" name="varSineAngle" sid="4382023734424688" static="0" type="number">0</variable>
+        <comment>Main sheet. Here are the variables, the Update Code, the Particles, the Shining, and the Bitmap Sprite creation code.</comment>
+        <variable constant="0" name="varPickRandomObject" sid="3783893699739577" static="0" type="number">0</variable>
+        <comment>chars is for storing the text that will get passed to the dictionary, slicing every sprite and assigning it to each letter and position in the Dictionary.</comment>
+        <variable constant="0" name="chars" sid="8253775538712698" static="0" type="text">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-.,:;&apos;&quot;?!() </variable>
+        <comment>INFO: FPS, Renderer, all the DEV info</comment>
+        <variable comment="Passes Sprite ID parameter to the Tween Function" constant="0" name="varPassSpriteIDtoCODESHEET" sid="624056742936947" static="0" type="number">0</variable>
+        <variable constant="0" name="ParticleX" sid="7818069285893016" static="0" type="number">0</variable>
+        <variable constant="0" name="ParticleY" sid="47989482853291" static="0" type="number">0</variable>
+        <variable constant="0" name="varWhatAnimationToShow" sid="7747158699136924" static="0" type="number">0</variable>
+        <comment>Show a random image on each start. How? Store a random number and assign it. Why? To make it more varied</comment>
+        <variable constant="0" name="varWhatFrameToShow" sid="8883187363558971" static="0" type="number">0</variable>
+        <comment>This will store how many items are created at Start</comment>
+        <variable constant="0" name="varHowManyItemsToCreate" sid="8935882413747363" static="0" type="number">0</variable>
+        <variable constant="0" name="varItemsCreatedFPSinfo" sid="4672047028881016" static="0" type="number">0</variable>
+        <variable comment="How many items are still left onscreen?" constant="0" name="varCountHowManyItemsLeft" sid="6232111306992735" static="0" type="number">0</variable>
+        <comment>Viewport variables to check if the window has changed</comment>
+        <variable constant="0" name="varViewportHeight" sid="2008530931214517" static="0" type="number">0</variable>
+        <variable constant="0" name="varViewportWidth" sid="1915055152505672" static="0" type="number">0</variable>
+        <event-block sid="2245988167104797">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6708406611204759" type="System" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="0" name="Call function" sid="974114504847389" type="Function">
+                    <param id="0" name="Name">&quot;functionCreateBackground&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="155499894504939" type="Function">
+                    <param id="0" name="Name">&quot;functionCorrectFontTracking&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="4" name="Preload" sid="7029241042234277" type="Audio">
+                    <param id="0" name="Audio file">click</param>
+                </action>
+                <action id="0" name="Play" sid="1844485053915324" type="Audio">
+                    <param id="0" name="Audio file">click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-40</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="1449182467463468" type="Audio">
+                    <param id="0" name="Audio file">click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-40</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="2" name="Stop" sid="5561410045264456" type="btnTryAgain" />
+                <action id="4" name="Preload" sid="53267389429562" type="Audio">
+                    <param id="0" name="Audio file">Congratulations-Excellent</param>
+                </action>
+                <action id="4" name="Preload" sid="4508456679734444" type="Audio">
+                    <param id="0" name="Audio file">Congratulations-Good Job</param>
+                </action>
+                <action id="4" name="Preload" sid="3792718324408776" type="Audio">
+                    <param id="0" name="Audio file">Congratulations-Good</param>
+                </action>
+                <action id="4" name="Preload" sid="1004727768773264" type="Audio">
+                    <param id="0" name="Audio file">Congratulations-Perfect</param>
+                </action>
+                <action id="-9" name="Destroy" sid="7360117216749738" type="btnBackButton" />
+                <action disabled="1" id="-9" name="Destroy" sid="7708137131745724" type="btnRestartLayout" />
+                <action id="-7" name="Set size" sid="7031560007270202" type="Background9patch2">
+                    <param id="0" name="Width">ViewportRight(&quot;Layer 0&quot;) - ViewportLeft(&quot;Layer 0&quot;)</param>
+                    <param id="1" name="Height">ViewportBottom(&quot;Layer 0&quot;) - ViewportTop(&quot;Layer 0&quot;)</param>
+                </action>
+                <action disabled="1" id="-9" name="Set value" sid="2907981593101314" type="System">
+                    <param id="0" name="Variable">varViewportWidth</param>
+                    <param id="1" name="Value">ViewportRight(&quot;Layer 0&quot;) - ViewportLeft(&quot;Layer 0&quot;)</param>
+                </action>
+                <action disabled="1" id="-9" name="Set value" sid="656069625775356" type="System">
+                    <param id="0" name="Variable">varViewportHeight</param>
+                    <param id="1" name="Value">ViewportRight(&quot;Layer 0&quot;) - ViewportLeft(&quot;Layer 0&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>On start, checks if there&apos;s a new version available&#x0D;&#x0A;and starts downloading&#x0D;&#x0A;If there&apos;s a new version, when it finished downloading, reloads the page.</comment>
+        <event-group description="" sid="8054501283956276" title="function RESTART LAYOUT2">
+            <sub-events>
+                <event-block sid="5565642563557564">
+                    <conditions>
+                        <condition id="0" name="On function" sid="3979955611566668" type="Function">
+                            <param id="0" name="Name">&quot;functionRestartLayout&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="5075826032828338" type="System" />
+                        <action disabled="1" id="-21" name="Reset global variables" sid="238767570415838" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="7053217959452822" title="Group MidEnd Game - create four-colored Particles">
+            <sub-events>
+                <variable comment="In what layer to put Particles" constant="0" name="varParticleOnWhatLayer" sid="9919625552733308" static="0" type="number">0</variable>
+                <event-block sid="9595777165111175">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2865926098632306" type="Function">
+                            <param id="0" name="Name">&quot;functionCreateFourColorParticles&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="0" name="Set text" sid="3821034560718373" type="debug">
+                            <param id="0" name="Text">&quot;particle time&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>Here are the codes for Layout RESTART</comment>
+        <event-group description="" sid="8689049944566471" title="GENERAL NAVIGATION">
+            <sub-events>
+                <event-block disabled="1" sid="4281215681490498">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="5469166095201615" type="Touch">
+                            <param id="0" name="Object">btnRestartLayout</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="0" name="Play" sid="3102660309176279" type="Audio">
+                            <param id="0" name="Audio file">click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="2206470177127281" type="btnRestartLayout">
+                            <param id="0" name="Scale">1.3</param>
+                        </action>
+                        <action id="0" name="Call function" sid="55209077821708" type="Function">
+                            <param id="0" name="Name">&quot;functionRestartLayout&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Go to home URL</comment>
+                <event-block sid="2119922330524968">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="7353155775936982" type="Touch">
+                            <param id="0" name="Object">btnBackButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="3010773607478908" type="Audio">
+                            <param id="0" name="Audio file">click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="51914255596513" type="System">
+                            <param id="0" name="Seconds">2 * dt</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="3610464459889618" type="System">
+                            <param id="0" name="Layout">HOME</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="This ends the gaming session with a black screen" inactive="1" sid="3464273347852175" title="groupEndGameWithBlackScreen">
+            <sub-events>
+                <event-block sid="2869072800713044">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="4971859474804637" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="6894839196005138" type="System">
+                            <param id="0" name="Seconds">60 * dt</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="5549139378481144" type="System">
+                            <param id="0" name="Object to create">TiledBlack</param>
+                            <param id="1" name="Layer">&quot;GUI&quot;</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="1636391638210322" type="btnBackButton" />
+                        <action disabled="1" id="-24" name="Move to top" sid="5073844391489976" type="btnRestartLayout" />
+                        <action id="-7" name="Set size" sid="2432261593480071" type="TiledBlack">
+                            <param id="0" name="Width">1024</param>
+                            <param id="1" name="Height">748</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="6773834162187562" type="System">
+                            <param id="0" name="Seconds">15 * dt</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-group description="Play from Random list" inactive="1" sid="9112108686157095" title="Play Congratulations sound">
+                            <sub-events>
+                                <event-block sid="8003036828991103">
+                                    <conditions />
+                                    <actions>
+                                        <action id="6" name="Stop" sid="6255081345771253" type="Audio">
+                                            <param id="0" name="Tag">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="8325497716799341" type="System">
+                                            <param id="0" name="Seconds">30 * dt</param>
+                                        </action>
+                                        <action id="7" name="Play (by name)" sid="9557547496991981" type="Audio">
+                                            <param id="0" name="Folder">0</param>
+                                            <param id="1" name="Audio file name">choose(&quot;Congratulations-Excellent&quot;,&quot;Congratulations-Good Job&quot;,&quot;Congratulations-Good&quot;,&quot;Congratulations-Perfect&quot;)</param>
+                                            <param id="3" name="Loop">0</param>
+                                            <param id="4" name="Volume">0</param>
+                                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-block sid="87988037917379">
+                            <conditions />
+                            <actions>
+                                <action id="-12" name="Set group active" sid="5962779831903327" type="System">
+                                    <param id="0" name="Group name">&quot;groupEndGameWithBlackScreen&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="This shows particles, congratulates and fades items. Also restarts the layout to continue playing." sid="8685519347213185" title="function Mid end game">
+            <sub-events>
+                <event-block sid="9098816221270929">
+                    <conditions>
+                        <condition id="0" name="On function" sid="3848530070139335" type="Function">
+                            <param id="0" name="Name">&quot;functionEndGameAndContinuePlaying&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="FadeFamilyMainActItems" id="1" name="Start fade" sid="2953447606817184" type="familyMainActivityItems" />
+                        <action id="-16" name="Wait" sid="8325497716799341" type="System">
+                            <param id="0" name="Seconds">30 * dt</param>
+                        </action>
+                        <action disabled="1" id="0" name="Call function" sid="4655553992194223" type="Function">
+                            <param id="0" name="Name">&quot;functionCreateFourColorParticles&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="7" name="Play (by name)" sid="9557547496991981" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;Congratulations-Excellent&quot;,&quot;Congratulations-Good Job&quot;,&quot;Congratulations-Good&quot;,&quot;Congratulations-Perfect&quot;)</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="522223180336276" type="System">
+                            <param id="0" name="Seconds">60 * dt</param>
+                        </action>
+                        <action id="0" name="Call function" sid="3750042361441125" type="Function">
+                            <param id="0" name="Name">&quot;functionRestartLayout&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Create and Position Background items on screen" sid="2571796559300169" title="Group-CREATE-BACKGROUND">
+            <sub-events>
+                <event-block sid="5363786537364855">
+                    <conditions>
+                        <condition id="0" name="On function" sid="3567860420007259" type="Function">
+                            <param id="0" name="Name">&quot;functionCreateBackground&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="194597669688971" type="System">
+                            <param id="0" name="Object to create">Background9patch2</param>
+                            <param id="1" name="Layer">&quot;GUI&quot;</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="273790372941507" type="Background9patch2" />
+                        <action id="-7" name="Set size" sid="4264327796907925" type="Background9patch2">
+                            <param id="0" name="Width">ViewportRight(&quot;Background&quot;) - ViewportLeft(&quot;Background&quot;)</param>
+                            <param id="1" name="Height">ViewportBottom(&quot;Background&quot;) - ViewportTop(&quot;Background&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Position the buttons on screen" sid="3553607981013886" title="CREATE-GUI">
+            <sub-events>
+                <event-block sid="5363786537364855">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="802532185675348" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="4390525623250022" type="System">
+                            <param id="0" name="Object to create">btnBackButton</param>
+                            <param id="1" name="Layer">&quot;GUI&quot;</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action disabled="1" id="-3" name="Create object" sid="4697220117709707" type="System">
+                            <param id="0" name="Object to create">btnRestartLayout</param>
+                            <param id="1" name="Layer">&quot;GUI&quot;</param>
+                            <param id="2" name="X">1024</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>Here is the code for Developer and Debugging</comment>
+        <event-group description="Shows debuggin and developing info, only on Preview, not on Export" inactive="1" sid="788176130830034" title="DEVELOPER">
+            <sub-events>
+                <event-block sid="7265848945157775">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="4019067886919383" type="System" />
+                        <condition id="-18" name="Is in preview" sid="1336611069340412" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="9279763321003699" type="System">
+                            <param id="0" name="Object to create">txtInfoBoxFPSDEV</param>
+                            <param id="1" name="Layer">&quot;DEV&quot;</param>
+                            <param id="2" name="X">20</param>
+                            <param id="3" name="Y">20</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="3565713911613862" type="txtInfoBoxFPSDEV">
+                            <param id="0" name="Width">376</param>
+                            <param id="1" name="Height">112</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3655860982544947">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="8898669168583669" type="txtInfoBoxFPSDEV" />
+                        <condition id="-18" name="Is in preview" sid="8030368830685233" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-24" name="Move to top" sid="2948509908335824" type="txtInfoBoxFPSDEV" />
+                    </actions>
+                </event-block>
+                <event-block sid="6860674400426354">
+                    <conditions>
+                        <condition id="-3" name="On end of layout" sid="1795968578064999" type="System" />
+                        <condition id="-18" name="Is in preview" sid="4256496965808125" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7920819038583799" type="txtInfoBoxFPSDEV" />
+                    </actions>
+                </event-block>
+                <event-block sid="2040728800510197">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="7677305690335728" type="System">
+                            <param id="0" name="Interval (seconds)">0.5</param>
+                        </condition>
+                        <condition id="-18" name="Is in preview" sid="1657312054002433" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="8690681033597987" type="txtInfoBoxFPSDEV">
+                            <param id="0" name="Text">fps &amp; &quot; FPS - &quot; &amp; objectcount &amp; &quot; objects - &quot; &amp; renderer &amp; &quot; renderer&quot;  &amp; newline &amp; round(cpuutilisation * 100) &amp; &quot;% CPU utilisation&quot; &amp; newline &amp;   &quot;Items created: &quot; &amp; varItemsCreatedFPSinfo &amp; newline &amp; &quot;How Many Items Left: &quot; &amp; varCountHowManyItemsLeft </param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description='This dissappears incorrect items (fade out), making also a &quot;Pop!&quot; sound.' sid="5997597216949912" title="Group ClickOnIncorrectFadeItAndContinuePlaying">
+            <sub-events>
+                <event-block sid="3758495806447513">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2392221036093468" type="Function">
+                            <param id="0" name="Name">&quot;functionClickOnIncorrectFadeItAndContinuePlaying&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="4987478672563281" type="Audio">
+                            <param id="0" name="Audio file">click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Creates particles when the clicked object disappears" sid="5897538124489929" title="Group CreateParticlesOnClickedObject">
+            <sub-events>
+                <event-block sid="3758495806447513">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2392221036093468" type="Function">
+                            <param id="0" name="Name">&quot;functionCreateParticlesOnObjectCoordinatesWhenClicked&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="0" name="Set text" sid="7812363587682445" type="debug">
+                            <param id="0" name="Text">&quot;particle time&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="4595762410267994" type="System">
+                            <param id="0" name="Seconds">2 * dt</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="2753109726389287" title="Group CreateTextOverClickedObject">
+            <sub-events>
+                <event-block sid="1727839102834906">
+                    <conditions>
+                        <condition id="0" name="On function" sid="117110108188345" type="Function">
+                            <param id="0" name="Name">&quot;functionCreateNameOverObjectCoordinatesWhenClicked&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="3021506822111218" type="System">
+                            <param id="0" name="Object to create">SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30</param>
+                            <param id="1" name="Layer">&quot;GUI&quot;</param>
+                            <param id="2" name="X">Function.Param(0)</param>
+                            <param id="3" name="Y">Function.Param(1)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="3148894255557267" type="debug">
+                            <param id="0" name="Text">Function.Param(2) &amp; newline &amp; Function.Param(3) &amp; newline &amp; Function.Param(4) &amp; newline &amp; Function.Param(5)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="7850978500350561" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Text">Function.Param(2)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="6556567623806759" type="System">
+                            <param id="0" name="Seconds">1 * dt</param>
+                        </action>
+                        <action id="0" name="Call function" sid="1242417361046445" type="Function">
+                            <param id="0" name="Name">&quot;functionCorrectFontTracking&quot;</param>
+                            <param id="1" name="Parameter {n}">3</param>
+                        </action>
+                        <action id="-23" name="Move at angle" sid="1535660693292851" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Angle">int(random(0,359))</param>
+                            <param id="1" name="Distance">30</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="7753450788965529" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="1528831384613438">
+                            <conditions />
+                            <actions>
+                                <action behavior="Fade" id="1" name="Start fade" sid="4311285162785191" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="1538319524659395" title="Group correctFontTracking">
+            <sub-events>
+                <event-block sid="1066653664961995">
+                    <conditions>
+                        <condition id="0" name="On function" sid="6251645224915434" type="Function">
+                            <param id="0" name="Name">&quot;functionCorrectFontTracking&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set character width" sid="9347564069396391" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;|&quot;</param>
+                            <param id="1" name="Width">6</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="1246314718621584" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;&apos;&quot;</param>
+                            <param id="1" name="Width">7</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="1824980259313141" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;Il1()`&quot;</param>
+                            <param id="1" name="Width">8</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="5531280863094865" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;i.,;:! &quot;</param>
+                            <param id="1" name="Width">9</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="7344018578521273" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;°&quot;</param>
+                            <param id="1" name="Width">10</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="9145116759619758" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;t-&quot;&quot;[]&quot;</param>
+                            <param id="1" name="Width">11</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="6383199318733506" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;cjr*&quot;</param>
+                            <param id="1" name="Width">12</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="5649639399085117" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;ef\/&quot;</param>
+                            <param id="1" name="Width">13</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="8689612568470505" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;os_$&quot;</param>
+                            <param id="1" name="Width">14</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="9920751321994992" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;EFLabghknuyz&quot;</param>
+                            <param id="1" name="Width">15</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="1070919886783521" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;PTdpqvx7?+=£&lt;&gt;&quot;</param>
+                            <param id="1" name="Width">16</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="7028688769417044" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;BCDGHJNRSUVXZ235689&quot;</param>
+                            <param id="1" name="Width">17</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="2973814087989367" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;AKY4~&amp;&quot;</param>
+                            <param id="1" name="Width">18</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="3039961374834363" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;OQ0€&quot;</param>
+                            <param id="1" name="Width">19</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="8014237574015517" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;w&quot;</param>
+                            <param id="1" name="Width">20</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="3450500415550993" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;MW#&quot;</param>
+                            <param id="1" name="Width">21</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="988636996257693" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;m&quot;</param>
+                            <param id="1" name="Width">23</param>
+                        </action>
+                        <action id="5" name="Set character width" sid="867045814514096" type="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30">
+                            <param id="0" name="Character">&quot;@&quot;</param>
+                            <param id="1" name="Width">26</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block disabled="1" sid="2421491535173256">
+            <conditions />
+            <actions>
+                <action id="-7" name="Set size" sid="6637579149860107" type="Background9patch2">
+                    <param id="0" name="Width">ViewportRight(&quot;Layer 0&quot;) - ViewportLeft(&quot;Layer 0&quot;)</param>
+                    <param id="1" name="Height">ViewportBottom(&quot;Layer 0&quot;) - ViewportTop(&quot;Layer 0&quot;)</param>
+                </action>
+                <action id="-7" name="Set size" sid="5613165537706965" type="Background9patch2">
+                    <param id="0" name="Width">ViewportRight(&quot;Layer 0&quot;) - ViewportLeft(&quot;Layer 0&quot;)</param>
+                    <param id="1" name="Height">ViewportBottom(&quot;Layer 0&quot;) - ViewportTop(&quot;Layer 0&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="7739097907684403">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1546146709943588" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3183460859434238" type="System">
+                    <param id="0" name="Variable">varSineAngle</param>
+                    <param id="1" name="Value">round(SpriteAngles.Sine.Value)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,1237 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Montessori Pals - Alphabet</name>
+    <description>Games and learning</description>
+    <version>1.0.0</version>
+    <author>That Art Company</author>
+    <author-email>info@thatartcompany.com</author-email>
+    <author-website>www.thatartcompany.com</author-website>
+    <app-id>com.thatartcompany.www.laika.montessori.alphabet</app-id>
+    <unique-id>3om4fqck6p5en</unique-id>
+    <saved-with-version>20700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="R0J0hound" id="c2canvas" version="2">Canvas</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.100000024">LiteTween</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1024</width>
+        <height>748</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>SplashScreen</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">No</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Scale outer</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Hide address bar">Yes</prop>
+        <prop name="Loader style">Nothing (not recommended)</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Preload sounds">No</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+        <prop name="Use iOS retina display">Never</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="ActAbecedary (04)">
+            <object-type name="AbecedaryActCuadrote" sid="1925265158301071">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="3487702458072844">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9213443104035937" speed="5">
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="AbecedaryActKey" sid="6419145137951943">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="1670855175190571" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="39" loop="0" name="uppercase" pingpong="0" repeatcount="1" repeatto="0" sid="4175947641440581" speed="5">
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.503448" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.503546" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.50303" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.505263" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.503145" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.50289" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.502674" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.50365" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.503401" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.503448" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.503067" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.502994" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.503448" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.503401" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.503185" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.503546" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.503311" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.507463" hotspotY="0.502128" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="AbecedaryActKeyButton" sid="9362870761260095">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="4773392498407812" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6312563076544354" speed="5">
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.501672" original-source="\\VBOXSVR\Dropbox\Profit\OLD\PSDs\exportadas\images\button 2013-03-28 01.png">
+                            <collision-poly>
+                                <point x="0.160959" y="0.157191" />
+                                <point x="0.5" y="0.0200669" />
+                                <point x="0.839041" y="0.157191" />
+                                <point x="0.989726" y="0.498328" />
+                                <point x="0.832192" y="0.83612" />
+                                <point x="0.5" y="0.966555" />
+                                <point x="0.167808" y="0.83612" />
+                                <point x="0.010274" y="0.498328" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="AbecedaryActText" sid="3588892158233593">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="AbecedaryActText2" sid="3908246531744796">
+                <plugin id="Text" />
+            </object-type>
+            <object-type global="1" name="ArrayAbecedaryKey" sid="7016110651091603">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type name="btnAbecedary" sid="2946054689145509">
+                <plugin id="Button" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Elements Shared">
+            <object-type name="btnBackButton" sid="6095140411536944">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="6886978574488697">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1024088885319035" speed="5">
+                        <frame duration="1" format="png8" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btnRestartLayout" sid="8136312942431622">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4041248243492301" speed="5">
+                        <frame duration="1" format="png8" hotspotX="1" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type global="1" name="btnTryAgain" sid="3936311396121378">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6379533710659366" speed="5">
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.506329">
+                            <collision-poly>
+                                <point x="0.0025" y="0.0126582" />
+                                <point x="0.9975" y="0.0126582" />
+                                <point x="0.9975" y="0.987342" />
+                                <point x="0.0025" y="0.987342" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.506329">
+                            <collision-poly>
+                                <point x="0.0025" y="0.0126582" />
+                                <point x="0.9975" y="0.0126582" />
+                                <point x="0.9975" y="0.987342" />
+                                <point x="0.0025" y="0.987342" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type global="1" name="Dictionary" sid="8899669118173378">
+                <plugin id="Dictionary" />
+            </object-type>
+            <object-type name="hole" sid="1713378633430115">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable comment="hole ID" name="ID" sid="2683125323143099" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1599672170294074" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.075" y="0.3" />
+                                <point x="0.5" y="0" />
+                                <point x="0.925" y="0.3" />
+                                <point x="1" y="0.5" />
+                                <point x="0.925" y="0.7" />
+                                <point x="0.5" y="1" />
+                                <point x="0.075" y="0.7" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TiledBackground" sid="3754736916676526">
+                <plugin id="TiledBg" />
+                <texture format="png8" />
+            </object-type>
+            <object-type name="MainFrameOfAct9patch" sid="6955131093649306">
+                <plugin id="NinePatch" />
+                <texture />
+            </object-type>
+        </object-folder>
+        <object-folder name="III-HOME">
+            <object-type name="txtLaikaDotCom" sid="1682232771300898">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5653987886686777" speed="5">
+                        <frame duration="1" format="png8" hotspotX="0.504065" hotspotY="0.52381">
+                            <collision-poly>
+                                <point x="0.0487805" y="0.285714" />
+                                <point x="0.495935" y="0.142857" />
+                                <point x="0.951219" y="0.285714" />
+                                <point x="0.97561" y="0.47619" />
+                                <point x="0.96748" y="0.809524" />
+                                <point x="0.495935" y="0.904762" />
+                                <point x="0.0325203" y="0.809524" />
+                                <point x="0.0162602" y="0.47619" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite00MainFrames" sid="7336156218972419">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="9365747218314679" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="8222271613410314" speed="0">
+                        <frame duration="0" format="png8" hotspotX="0.5" hotspotY="0.505882" />
+                        <frame duration="0" format="png8" hotspotX="0.5" hotspotY="0.505882" />
+                        <frame duration="0" format="png8" hotspotX="0.5" hotspotY="0.505882" />
+                        <frame duration="0" format="png8" hotspotX="0.5" hotspotY="0.505882" />
+                        <frame duration="0" format="png8" hotspotX="0.5" hotspotY="0.505882" />
+                        <frame duration="0" format="png8" hotspotX="0.5" hotspotY="0.505882" />
+                        <frame duration="0" format="png8" hotspotX="0.5" hotspotY="0.505882" />
+                        <frame duration="0" format="png8" hotspotX="0.5" hotspotY="0.505882" />
+                        <frame duration="0" format="png8" hotspotX="0.5" hotspotY="0.505882" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btnMainFrame" sid="1437660225737479">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="7504237712176774" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1938272901399657" speed="5">
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.503597">
+                            <collision-poly>
+                                <point x="0.0273224" y="0.0359712" />
+                                <point x="0.497268" y="0.00719424" />
+                                <point x="0.972678" y="0.0359712" />
+                                <point x="0.994536" y="0.496403" />
+                                <point x="0.967213" y="0.956835" />
+                                <point x="0.497268" y="0.992806" />
+                                <point x="0.0273224" y="0.964029" />
+                                <point x="0" y="0.496403" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mainTopLeftCorner" sid="3606406222870751">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9322910936469178" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mainHeader" sid="839600499742594">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3004121635949661" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mainTiledTop" sid="9162984677392294">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="mainTopRightCorner" sid="1521714160783046">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6277001090896502" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mainLeftBar" sid="5106660416948765">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8787758504649497" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mainRightBar" sid="902097937511653">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4419900232942501" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mainBottomRightCorner" sid="2367981399567125">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3670105828607067" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mainBottomLeftCorner" sid="8467296179399925">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2795531582644936" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mainBottomTile" sid="4477987311128098">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="mainTiledBackgroundOffWhite" sid="1081255036909836">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+        </object-folder>
+        <object-folder name="END Screen" />
+        <object-folder name="Fonts - Text Sprites">
+            <object-type name="SpriteFont_GrilledCheeseBTNToasted_AntiAlias_18_Left020_28x30" sid="3563828752684067">
+                <plugin id="Spritefont2" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="6264148894391641">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Fade" sid="9775152116729452">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <texture />
+            </object-type>
+        </object-folder>
+        <object-folder name="I-DEV">
+            <object-type name="txtInfoBoxFPSDEV" sid="4661438873734539">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder name="ActSounds">
+            <object-type name="SpriteActSounds" sid="3651093322011906">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="animation" sid="6637195710172208" type="string" />
+                    <instance-variable name="ID" sid="7020950121215236" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="3" loop="1" name="blender" pingpong="0" repeatcount="1" repeatto="0" sid="3691480533222351" speed="15">
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502645">
+                            <collision-poly>
+                                <point x="0.00364964" y="0.00529101" />
+                                <point x="0.99635" y="0.00529101" />
+                                <point x="0.99635" y="0.994709" />
+                                <point x="0.00364964" y="0.994709" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502645">
+                            <collision-poly>
+                                <point x="0.00364964" y="0.00529101" />
+                                <point x="0.99635" y="0.00529101" />
+                                <point x="0.99635" y="0.994709" />
+                                <point x="0.00364964" y="0.994709" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502645">
+                            <collision-poly>
+                                <point x="0.00364964" y="0.00529101" />
+                                <point x="0.99635" y="0.00529101" />
+                                <point x="0.99635" y="0.994709" />
+                                <point x="0.00364964" y="0.994709" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="3" loop="1" name="thunder" pingpong="0" repeatcount="1" repeatto="0" sid="4534909384902015" speed="6">
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502645" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502645" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502645" />
+                    </animation>
+                    <animation framecount="2" loop="1" name="ambulance" pingpong="0" repeatcount="1" repeatto="0" sid="5367196288021774" speed="12">
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502645" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502645" />
+                    </animation>
+                    <animation framecount="3" loop="1" name="washing" pingpong="0" repeatcount="1" repeatto="0" sid="4244388614314399" speed="11">
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502645" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502645" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502645" />
+                    </animation>
+                    <animation framecount="2" loop="1" name="dog" pingpong="0" repeatcount="1" repeatto="0" sid="92208028291103" speed="10">
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502645" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502645" />
+                    </animation>
+                    <animation framecount="2" loop="1" name="phone" pingpong="0" repeatcount="1" repeatto="0" sid="9948139108578867" speed="11">
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502645" />
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502645" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Logos">
+            <object-type name="LaikaLogo" sid="8207629355304544">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4302398857886342" speed="5">
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="AutonomyLogoSmall" sid="9184281901128076">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2904702837811541" speed="5">
+                        <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.505747" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="II-Splash Page Elements">
+            <object-type name="TiledLoadPercent" sid="172567429882873">
+                <plugin id="TiledBg" />
+                <texture format="png8" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Backgrounds">
+            <object-type name="backgroundGradientBlue" sid="9319408899126831">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3092863695162829" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="backgroundGradientBlueViolet" sid="6170333428717081">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1346597099676596" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="backgroundGradientGrape" sid="1334071615816558">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="611449573023422" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="backgroundGradientGreen" sid="3080465161077447">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9087658820316026" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="backgroundGradientORangeBrick" sid="625312100978293">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8378313674755569" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="backgroundGradientRedWine" sid="2888753956787158">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3019913167827786" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TiledBackground7" sid="5893761093057568">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="TiledBackground8" sid="3147488737019742">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="TiledBackground9" sid="459127987546593">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="S5G0I800" sid="3427855674595972">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="S5G0I801" sid="9696872605525447">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="S5G0A800" sid="5808100742135029">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="S5G0A801" sid="9866838017503898">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="S5G0B800" sid="751304344660566">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="S5G0E800" sid="1280205697389133">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="S5G0E801" sid="5384810159302218">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="S100M800" sid="1244489806446624">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="ChestClosed" sid="6782447108103554">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="7599378436302369">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5839834392914167" speed="5">
+                        <frame duration="1" hotspotX="0.504951" hotspotY="0.502924" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="S500M800" sid="122531083634109">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="S500M801" sid="6030882930144485">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="G0G0A800" sid="7179287900755434">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="G0G0A801" sid="6310023534655896">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="G0G0B800" sid="9692790164368739">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="G0G0B801" sid="1816011886664627">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="G0G0E800" sid="9220342305073634">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="G0G0E801" sid="6121844501097306">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="G0G0I800" sid="5511144485476528">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="G0G0I801" sid="2798969846906147">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="G000M800" sid="4421811964532519">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="G000M802" sid="2736923801252959">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="G000M803" sid="7323876357642872">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="StoneBlockTall" sid="9711223187492094">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4069917970464962" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="0.0891089" y="0.0526316" />
+                                <point x="0.910891" y="0.0526316" />
+                                <point x="1" y="0.497076" />
+                                <point x="0.980198" y="0.988304" />
+                                <point x="0.019802" y="0.988304" />
+                                <point x="0" y="0.497076" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="WallBlockTall2" sid="5069991355715966">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="StoneBlockTall2" sid="5767496019201506">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="TreeShort" sid="3787681290611183">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="457678420852158" speed="0">
+                        <frame duration="1" hotspotX="0.504951" hotspotY="0.502924" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Rock" sid="3898702131654167">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1132204694187618" speed="0">
+                        <frame duration="1" hotspotX="0.504951" hotspotY="0.502924" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Selector" sid="7247042298332735">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3069008638375177" speed="0">
+                        <frame duration="1" hotspotX="0.504951" hotspotY="0.502924" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="StoneBlock" sid="3895042679075496">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3409745323186651" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TreeTall" sid="3972227368877575">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7691884015444237" speed="0">
+                        <frame duration="1" hotspotX="0.504951" hotspotY="0.502924" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ChestOpen" sid="3257406066868">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="3760351534244547">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4023832863489923" speed="5">
+                        <frame duration="1" hotspotX="0.504951" hotspotY="0.502924" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="StoneBlockShort" sid="7881956357002744">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="TreeUgly" sid="4518216807917936">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6733876045933864" speed="0">
+                        <frame duration="1" hotspotX="0.504951" hotspotY="0.502924" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="WallBlock" sid="4617393726078707">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8860410392724642" speed="5">
+                        <frame duration="1" hotspotX="0.504951" hotspotY="0.502924" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="WallBlockTall" sid="1649181923580617">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1911871707731744" speed="0">
+                        <frame duration="1" hotspotX="0.504951" hotspotY="0.502924" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Tilemap" sid="5985451371359242">
+                <plugin id="Tilemap" />
+                <texture />
+                <tiles />
+            </object-type>
+            <object-type global="1" name="TiledBlack" sid="6666493203797636">
+                <plugin id="TiledBg" />
+                <texture format="png8" />
+            </object-type>
+        </object-folder>
+        <object-type global="1" name="ArraySoundCorrect" sid="6609821476625117">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type global="1" name="ArraySoundWrong" sid="1677735025670685">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="btnReset" sid="1963172670495235">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="TextTryAgain" sid="9243261313559884">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="dialogBox01" sid="6690476348737744">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8231670065456106" speed="5">
+                    <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.503759">
+                        <collision-poly>
+                            <point x="0.053288" y="0.353383" />
+                            <point x="0.5" y="0" />
+                            <point x="0.995465" y="0.0300752" />
+                            <point x="0.995465" y="0.969925" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0521542" y="0.654135" />
+                            <point x="0.00113379" y="0.496241" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_blank" sid="2727408738095299">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ID" sid="302413002786894" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="4107920507286555">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3713134255215277" speed="5">
+                    <frame duration="1" format="png8" hotspotX="0.5" hotspotY="0.502392">
+                        <collision-poly>
+                            <point x="0.00454545" y="0.00478469" />
+                            <point x="0.995455" y="0.00478469" />
+                            <point x="0.995455" y="0.995215" />
+                            <point x="0.00909091" y="0.990431" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="arrayRandomAnimation" sid="707820175907437">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="txtTries" sid="5771191517482879">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txtMatches" sid="258385870036041">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="btnBackground" sid="9237278765383857">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ID" sid="8797930083699102" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="510366205914839" speed="5">
+                    <frame duration="1" format="png8" hotspotX="0.501639" hotspotY="0.5" />
+                    <frame duration="1" format="png8" hotspotX="0.501639" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="ArrayActSounds" sid="742335308727773">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type global="1" name="ArrayGoToLayout" sid="2135732863752986">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="txtBitmapRanchers" sid="8380154297034476">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="redraw" sid="122382605887852" type="boolean" />
+            </instance-variables>
+        </object-type>
+        <object-type name="txtDrawLetterCounter" sid="1656424199222039">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txtDrawLetterCounterCompare" sid="4563203672991773">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="hovertext" sid="647788360366703">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Audio" sid="5710885828591439">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Canvas" sid="4777174680723298">
+            <plugin id="c2canvas" />
+            <texture format="png8" />
+        </object-type>
+        <object-type name="Touch" sid="3977305031800619">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Function" sid="633144900094502">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="debug" sid="3672245430731911">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button" sid="3298558655699496">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Background9patch2" sid="1138308380377328">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="3616719331645286">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type global="1" name="ArraySpriteToClickNames" sid="1858320413595811">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="spriteMonkey128" sid="4370237589240669">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="1" repeatcount="2" repeatto="0" sid="931112935106054" speed="1">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spriteMonkey512" sid="7286849775116535">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156866245857538" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0.00390625" />
+                            <point x="0.748047" y="0.242188" />
+                            <point x="0.703125" y="0.494141" />
+                            <point x="0.916016" y="0.916016" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0859375" y="0.914063" />
+                            <point x="0.302734" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="debug2" sid="5685877598731636">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text" sid="3142155288075425">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="autonomylogo" sid="1645267153683947">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6971870681285753" speed="5">
+                    <frame duration="1" hotspotX="0.521664" hotspotY="0.212803" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="txtversion" sid="9921203620778974">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="983713782532217">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type global="1" name="SpriteAngles" sid="9469066668515735">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="4183714042065952">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2258443533724145" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="1364733611449718">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Mouse" sid="9146911156316935">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Text3" sid="2909729605302369">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite15" sid="677887658572877">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2991550404684435" speed="5">
+                    <frame duration="1" hotspotX="0.500317" hotspotY="0.500715" original-source="F:\Autonomy\2 - Doing\ACB Alphabet\images\Montessori-Pals-ABC-Logo.png">
+                        <collision-poly>
+                            <point x="0.0234921" y="0.0529328" />
+                            <point x="0.977143" y="0.0515021" />
+                            <point x="0.760635" y="0.460658" />
+                            <point x="0.499683" y="0.460658" />
+                            <point x="0.0565079" y="0.872675" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite16" sid="8753396981247545">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7581635551715592" speed="5">
+                    <frame duration="1" hotspotX="0.500288" hotspotY="0.500524" original-source="F:\Autonomy\2 - Doing\ACB Alphabet\images\Montessori-Pals-ABC-Title.png">
+                        <collision-poly>
+                            <point x="0.15544" y="0.397644" />
+                            <point x="0.499712" y="0.309278" />
+                            <point x="0.796776" y="0.519882" />
+                            <point x="0.985032" y="0.961708" />
+                            <point x="0.499712" y="0.989691" />
+                            <point x="0.0132412" y="0.966127" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="familyMainActivityItems" plugin-id="Sprite" sid="2426702085773605">
+            <members>
+                <member>AbecedaryActCuadrote</member>
+                <member>AbecedaryActKey</member>
+                <member>AbecedaryActKeyButton</member>
+            </members>
+            <behaviors>
+                <behavior-type name="FadeFamilyMainActItems" sid="6012585182054492">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>SplashScreen.xml</layout>
+        <layout>HOME.xml</layout>
+        <layout>PathHome.xml</layout>
+        <layout>ABC Buttons.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>HOME.xml</event-sheet>
+        <event-sheet>ABC Buttons.xml</event-sheet>
+        <event-sheet>SplashScreen.xml</event-sheet>
+        <event-sheet>CODESHEET.xml</event-sheet>
+        <event-sheet>CODE Array Object Names.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="754">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="755">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Function" uid="780" />
+        <global-instance type="Mouse" uid="45" />
+    </global-instances>
+    <sounds-folder>
+        <sound-folder name="Congratulations">
+            <file name="Congratulations-Excellent.ogg" />
+            <file name="Congratulations-Excellent.wav" />
+            <file name="Congratulations-Good Job.ogg" />
+            <file name="Congratulations-Good Job.wav" />
+            <file name="Congratulations-Good.ogg" />
+            <file name="Congratulations-Good.wav" />
+            <file name="Congratulations-Perfect.ogg" />
+            <file name="Congratulations-Perfect.wav" />
+            <file name="Congratulations-Excellent.m4a" />
+            <file name="Congratulations-Good Job.m4a" />
+            <file name="Congratulations-Good.m4a" />
+            <file name="Congratulations-Perfect.m4a" />
+        </sound-folder>
+        <sound-folder name="Abecedary">
+            <sound-folder name="AtoE">
+                <file name="A00JILL.m4a" />
+                <file name="A00JILL.ogg" />
+                <file name="A00TOM.m4a" />
+                <file name="A00TOM.ogg" />
+                <file name="B01JILL.m4a" />
+                <file name="B01JILL.ogg" />
+                <file name="B01TOM.m4a" />
+                <file name="B01TOM.ogg" />
+                <file name="C02JILL.m4a" />
+                <file name="C02JILL.ogg" />
+                <file name="C02TOM.m4a" />
+                <file name="C02TOM.ogg" />
+                <file name="D03JILL.m4a" />
+                <file name="D03JILL.ogg" />
+                <file name="D03TOM.m4a" />
+                <file name="D03TOM.ogg" />
+                <file name="E04JILL.m4a" />
+                <file name="E04JILL.ogg" />
+                <file name="E04TOM.m4a" />
+                <file name="E04TOM.ogg" />
+                <file name="EXCLAM37JILL.m4a" />
+                <file name="EXCLAM37JILL.ogg" />
+                <file name="EXCLAM37TOM.m4a" />
+                <file name="EXCLAM37TOM.ogg" />
+            </sound-folder>
+            <sound-folder name="FtoN">
+                <file name="F05JILL.m4a" />
+                <file name="F05JILL.ogg" />
+                <file name="F05TOM.m4a" />
+                <file name="F05TOM.ogg" />
+                <file name="G06JILL.m4a" />
+                <file name="G06JILL.ogg" />
+                <file name="G06TOM.m4a" />
+                <file name="G06TOM.ogg" />
+                <file name="H07JILL.m4a" />
+                <file name="H07JILL.ogg" />
+                <file name="H07TOM.m4a" />
+                <file name="H07TOM.ogg" />
+                <file name="I08JILL.m4a" />
+                <file name="I08JILL.ogg" />
+                <file name="I08TOM.m4a" />
+                <file name="I08TOM.ogg" />
+                <file name="J09JILL.m4a" />
+                <file name="J09JILL.ogg" />
+                <file name="J09TOM.m4a" />
+                <file name="J09TOM.ogg" />
+                <file name="K10JILL.m4a" />
+                <file name="K10JILL.ogg" />
+                <file name="K10TOM.m4a" />
+                <file name="K10TOM.ogg" />
+                <file name="L11JILL.m4a" />
+                <file name="L11JILL.ogg" />
+                <file name="L11TOM.m4a" />
+                <file name="L11TOM.ogg" />
+                <file name="M12JILL.m4a" />
+                <file name="M12JILL.ogg" />
+                <file name="M12TOM.m4a" />
+                <file name="M12TOM.ogg" />
+                <file name="N13JILL.m4a" />
+                <file name="N13JILL.ogg" />
+                <file name="N13TOM.m4a" />
+                <file name="N13TOM.ogg" />
+                <file name="NEGATIVE39JILL.m4a" />
+                <file name="NEGATIVE39JILL.ogg" />
+                <file name="NEGATIVE39TOM.m4a" />
+                <file name="NEGATIVE39TOM.ogg" />
+            </sound-folder>
+            <sound-folder name="OtoZ">
+                <file name="O14JILL.m4a" />
+                <file name="O14JILL.ogg" />
+                <file name="O14TOM.m4a" />
+                <file name="O14TOM.ogg" />
+                <file name="P15JILL.m4a" />
+                <file name="P15JILL.ogg" />
+                <file name="P15TOM.m4a" />
+                <file name="PLUS38JILL.m4a" />
+                <file name="P15TOM.ogg" />
+                <file name="PLUS38JILL.ogg" />
+                <file name="PLUS38TOM.m4a" />
+                <file name="PLUS38TOM.ogg" />
+                <file name="Q16JILL.m4a" />
+                <file name="Q16JILL.ogg" />
+                <file name="Q16TOM.m4a" />
+                <file name="Q16TOM.ogg" />
+                <file name="QUEST36JILL.m4a" />
+                <file name="QUEST36JILL.ogg" />
+                <file name="QUEST36TOM.m4a" />
+                <file name="QUEST36TOM.ogg" />
+                <file name="R17JILL.m4a" />
+                <file name="R17TOM.m4a" />
+                <file name="R17JILL.ogg" />
+                <file name="S18JILL.m4a" />
+                <file name="S18JILL.ogg" />
+                <file name="T19JILL.ogg" />
+                <file name="T19TOM.m4a" />
+                <file name="U20JILL.m4a" />
+                <file name="T19TOM.ogg" />
+                <file name="U20JILL.ogg" />
+                <file name="U20TOM.ogg" />
+                <file name="V21JILL.ogg" />
+                <file name="V21JILL.m4a" />
+                <file name="V21TOM.m4a" />
+                <file name="U20TOM.m4a" />
+                <file name="V21TOM.ogg" />
+                <file name="W22JILL.m4a" />
+                <file name="W22TOM.m4a" />
+                <file name="W22JILL.ogg" />
+                <file name="T19JILL.m4a" />
+                <file name="W22TOM.ogg" />
+                <file name="X23JILL.m4a" />
+                <file name="X23JILL.ogg" />
+                <file name="S18TOM.ogg" />
+                <file name="X23TOM.m4a" />
+                <file name="S18TOM.m4a" />
+                <file name="X23TOM.ogg" />
+                <file name="R17TOM.ogg" />
+                <file name="Y24JILL.m4a" />
+                <file name="Y24JILL.ogg" />
+                <file name="Y24TOM.m4a" />
+                <file name="Y24TOM.ogg" />
+                <file name="Z25JILL.m4a" />
+                <file name="Z25JILL.ogg" />
+                <file name="Z25TOM.m4a" />
+                <file name="Z25TOM.ogg" />
+            </sound-folder>
+        </sound-folder>
+        <sound-folder name="Numbers">
+            <file name="NUM0035JILL.m4a" />
+            <file name="NUM0035JILL.ogg" />
+            <file name="NUM0126JILL.m4a" />
+            <file name="NUM0934JILL.ogg" />
+            <file name="NUMBER0126TOM.m4a" />
+            <file name="NUMBER0126TOM.ogg" />
+            <file name="NUMBER0227TOM.m4a" />
+            <file name="NUMBER0227TOM.ogg" />
+            <file name="NUMBER0328TOM.m4a" />
+            <file name="NUMBER0328TOM.ogg" />
+            <file name="NUMBER0429TOM.m4a" />
+            <file name="NUMBER0429TOM.ogg" />
+            <file name="NUMBER0530TOM.m4a" />
+            <file name="NUMBER0530TOM.ogg" />
+            <file name="NUMBER0631TOM.m4a" />
+            <file name="NUMBER0631TOM.ogg" />
+            <file name="NUMBER0732TOM.ogg" />
+            <file name="NUMBER0732TOM.m4a" />
+            <file name="NUMBER0833TOM.m4a" />
+            <file name="NUMBER0934TOM.m4a" />
+            <file name="NUMBER0833TOM.ogg" />
+            <file name="NUMBER0934TOM.ogg" />
+            <file name="NUMBERZERO35TOM.m4a" />
+            <file name="NUMBERZERO35TOM.ogg" />
+            <file name="NUM0126JILL.ogg" />
+            <file name="NUM0934JILL.m4a" />
+            <file name="NUM0833JILL.ogg" />
+            <file name="NUM0833JILL.m4a" />
+            <file name="NUM0227JILL.m4a" />
+            <file name="NUM0328JILL.m4a" />
+            <file name="NUM0429JILL.m4a" />
+            <file name="NUM0530JILL.ogg" />
+            <file name="NUM0631JILL.m4a" />
+            <file name="NUM0631JILL.ogg" />
+            <file name="NUM0530JILL.m4a" />
+            <file name="NUM0429JILL.ogg" />
+            <file name="NUM0732JILL.m4a" />
+            <file name="NUM0732JILL.ogg" />
+            <file name="NUM0328JILL.ogg" />
+            <file name="NUM0227JILL.ogg" />
+        </sound-folder>
+        <sound-folder name="SHARED">
+            <file name="click.m4a" />
+            <file name="click.ogg" />
+            <file name="click_back.m4a" />
+            <file name="click_back.ogg" />
+        </sound-folder>
+        <file name="chalk-richymel.m4a" />
+        <file name="chalk-richymel.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="loading-logo.png" />
+            <file name="icon-256.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

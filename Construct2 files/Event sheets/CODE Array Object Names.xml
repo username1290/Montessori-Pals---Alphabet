@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>CODE Array Object Names</name>
+    <events>
+        <comment>Remember to add as many width and height as required</comment>
+        <event-block sid="7383450790887105">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5947303451671514" type="System" />
+            </conditions>
+            <actions>
+                <action id="3" name="Set at XY" sid="7900558852323205" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;Strawberry&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="7687700278055761" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;Blueberry&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="378220081699028" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;Kiwi&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="9784206760335569" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;Banana&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="1777176291369552" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">4</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;Cherry&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="6738926017669709" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">5</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;Apple&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="8222610713513799" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;Pumpkin&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="9727779780207233" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;Broccoli&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="5463371887226745" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;Onion&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="5613418995922995" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;Pepper&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="8952462304187036" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">4</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;Tomato&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="8527135625162467" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">5</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;Carrot&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="8256829793128803" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">2</param>
+                    <param id="2" name="Value">&quot;Toast&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="6812015240862935" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">2</param>
+                    <param id="2" name="Value">&quot;Bagel&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="4914464475293103" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">2</param>
+                    <param id="2" name="Value">&quot;Pizza&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="4558307098016735" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Y">2</param>
+                    <param id="2" name="Value">&quot;Waffle&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="6804221710288784" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">4</param>
+                    <param id="1" name="Y">2</param>
+                    <param id="2" name="Value">&quot;Pancake&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="8782444368221395" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">5</param>
+                    <param id="1" name="Y">2</param>
+                    <param id="2" name="Value">&quot;Spaghetti dish&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="3022621954664291" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">6</param>
+                    <param id="1" name="Y">2</param>
+                    <param id="2" name="Value">&quot;Cobb Salad&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="2928437930833051" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">7</param>
+                    <param id="1" name="Y">2</param>
+                    <param id="2" name="Value">&quot;Green Salad&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="3832932238557004" type="ArraySpriteToClickNames">
+                    <param id="0" name="X">8</param>
+                    <param id="1" name="Y">2</param>
+                    <param id="2" name="Value">&quot;Fried eggs&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

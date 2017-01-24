@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="1">ABC Buttons</layout>
+        <layout active="1" order="2">HOME</layout>
+        <layout order="4">SplashScreen</layout>
+        <event-sheet order="0">ABC Buttons</event-sheet>
+        <event-sheet order="3">CODESHEET</event-sheet>
+        <event-sheet order="5">SplashScreen</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="0" name="familyMainActivityItems" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/ActAbecedary (04)/" />
+        <folder expanded="0" path="object-folder/Elements Shared/" />
+        <folder expanded="0" path="object-folder/III-HOME/" />
+        <folder expanded="1" path="object-folder/END Screen/" />
+        <folder expanded="1" path="object-folder/Fonts - Text Sprites/" />
+        <folder expanded="0" path="object-folder/I-DEV/" />
+        <folder expanded="0" path="object-folder/ActSounds/" />
+        <folder expanded="1" path="object-folder/Logos/" />
+        <folder expanded="0" path="object-folder/II-Splash Page Elements/" />
+        <folder expanded="0" path="object-folder/Backgrounds/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="0" path="sound-folder/Abecedary/AtoE/" />
+        <folder expanded="0" path="sound-folder/Abecedary/FtoN/" />
+        <folder expanded="0" path="sound-folder/Abecedary/OtoZ/" />
+        <folder expanded="0" path="sound-folder/Congratulations/" />
+        <folder expanded="0" path="sound-folder/Abecedary/" />
+        <folder expanded="0" path="sound-folder/Numbers/" />
+        <folder expanded="1" path="sound-folder/SHARED/" />
+        <folder expanded="1" path="animation-folder/AbecedaryActCuadrote/" />
+        <folder expanded="1" path="animation-folder/AbecedaryActKey/" />
+        <folder expanded="1" path="animation-folder/AbecedaryActKeyButton/" />
+        <folder expanded="1" path="animation-folder/btnBackButton/" />
+        <folder expanded="1" path="animation-folder/btnRestartLayout/" />
+        <folder expanded="1" path="animation-folder/btnTryAgain/" />
+        <folder expanded="1" path="animation-folder/hole/" />
+        <folder expanded="1" path="animation-folder/txtLaikaDotCom/" />
+        <folder expanded="1" path="animation-folder/Sprite00MainFrames/" />
+        <folder expanded="1" path="animation-folder/btnMainFrame/" />
+        <folder expanded="1" path="animation-folder/mainTopLeftCorner/" />
+        <folder expanded="1" path="animation-folder/mainHeader/" />
+        <folder expanded="1" path="animation-folder/mainTopRightCorner/" />
+        <folder expanded="1" path="animation-folder/mainLeftBar/" />
+        <folder expanded="1" path="animation-folder/mainRightBar/" />
+        <folder expanded="1" path="animation-folder/mainBottomRightCorner/" />
+        <folder expanded="1" path="animation-folder/mainBottomLeftCorner/" />
+        <folder expanded="1" path="animation-folder/SpriteActSounds/" />
+        <folder expanded="1" path="animation-folder/LaikaLogo/" />
+        <folder expanded="1" path="animation-folder/AutonomyLogoSmall/" />
+        <folder expanded="1" path="animation-folder/backgroundGradientBlue/" />
+        <folder expanded="1" path="animation-folder/backgroundGradientBlueViolet/" />
+        <folder expanded="1" path="animation-folder/backgroundGradientGrape/" />
+        <folder expanded="1" path="animation-folder/backgroundGradientGreen/" />
+        <folder expanded="1" path="animation-folder/backgroundGradientORangeBrick/" />
+        <folder expanded="1" path="animation-folder/backgroundGradientRedWine/" />
+        <folder expanded="1" path="animation-folder/ChestClosed/" />
+        <folder expanded="1" path="animation-folder/StoneBlockTall/" />
+        <folder expanded="1" path="animation-folder/TreeShort/" />
+        <folder expanded="1" path="animation-folder/Rock/" />
+        <folder expanded="1" path="animation-folder/Selector/" />
+        <folder expanded="1" path="animation-folder/StoneBlock/" />
+        <folder expanded="1" path="animation-folder/TreeTall/" />
+        <folder expanded="1" path="animation-folder/ChestOpen/" />
+        <folder expanded="1" path="animation-folder/TreeUgly/" />
+        <folder expanded="1" path="animation-folder/WallBlock/" />
+        <folder expanded="1" path="animation-folder/WallBlockTall/" />
+        <folder expanded="1" path="animation-folder/dialogBox01/" />
+        <folder expanded="1" path="animation-folder/btn_blank/" />
+        <folder expanded="1" path="animation-folder/btnBackground/" />
+        <folder expanded="1" path="animation-folder/spriteMonkey128/" />
+        <folder expanded="1" path="animation-folder/spriteMonkey512/" />
+        <folder expanded="1" path="animation-folder/autonomylogo/" />
+        <folder expanded="1" path="animation-folder/SpriteAngles/" />
+        <folder expanded="1" path="animation-folder/Sprite15/" />
+        <folder expanded="1" path="animation-folder/Sprite16/" />
+    </folders-expanded>
+</c2uistate>

@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ABC Buttons</name>
+    <events>
+        <include>CODESHEET</include>
+        <comment>This will start the regular sequence (Press A, Play A;  Press B, Play B, etc). Includes random sound variations</comment>
+        <variable constant="0" name="KeyPressed" sid="1690099629829657" static="0" type="number">36</variable>
+        <comment>It will play one of Two available sound voices *ambulance01 and ambulance 02 are on same X row, different Y, so one of those audio files will be selected at random</comment>
+        <comment>We set the size of the Array WIDTH=X,  HEIGHT=Y &#x0D;&#x0A;We assign the sounds to be played, Y0 ?</comment>
+        <event-block sid="1252214104895025">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6625811470431581" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="4496186993500058" type="AbecedaryActKey" />
+                <action id="2" name="Stop" sid="4597549925258712" type="AbecedaryActKeyButton" />
+                <action id="1" name="Set size" sid="1817001689714219" type="ArrayAbecedaryKey">
+                    <param id="0" name="Width">36</param>
+                    <param id="1" name="Height">2</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+                <action id="3" name="Set at XY" sid="2759643074212374" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;A00JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="5801922694083471" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;A00TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="2918384466490485" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;B01JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="7977693012453283" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;B01TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="8310166196049925" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;C02JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="5562977327943164" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;C02TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="1823111845985795" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;D03JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="4259194929656483" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;D03TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="9217414656296078" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">4</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;E04JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="1155618108362598" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">4</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;E04TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="9709764238327766" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">5</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;F05JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="3649031861631043" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">5</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;F05TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="238285410751052" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">6</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;G06JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="8216619255805865" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">6</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;G06TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="6815279285593807" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">7</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;H07JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="992430529623688" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">7</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;H07TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="4974928661761997" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">8</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;I08JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="4300603189755928" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">8</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;I08TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="3941179679926049" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">9</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;J09JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="8534954383984754" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">9</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;J09TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="7454519454029346" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">10</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;K10JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="2490941209425806" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">10</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;K10TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="3811803874886399" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">11</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;L11JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="6301393389545732" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">11</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;L11TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="9972984486561827" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">12</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;M12JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="9452248441301219" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">12</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;M12TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="6270362610874672" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">13</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;N13JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="8382670892263773" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">13</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;N13TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="8104876817492187" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">14</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;O14JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="1653222918018299" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">14</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;O14TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="5532249723958477" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">15</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;P15JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="7277943557089822" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">15</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;P15TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="4465520770391554" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">16</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;Q16JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="570179931461256" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">16</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;Q16TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="694809617602681" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">17</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;R17JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="1480804652516236" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">17</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;R17TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="7479989523651478" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">18</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;S18JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="3608594557353756" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">18</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;S18TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="2797783194571896" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">19</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;T19JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="7720623604440622" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">19</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;T19TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="2696600593420104" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">20</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;U20JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="3479340485375492" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">20</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;U20TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="2688107924485742" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">21</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;V21JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="7040472616991724" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">21</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;V21TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="9413463226785504" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">22</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;W22JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="4151368242240436" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">22</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;W22TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="2056396150790855" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">23</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;X23JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="7141734530651841" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">23</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;X23TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="1615700403983584" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">24</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;Y24JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="5350503327089889" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">24</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;Y24TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="999951496871731" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">25</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;Z25JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="7993534444705875" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">25</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;Z25TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="1026193516668816" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">26</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;NUM0126JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="1101948072648429" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">26</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;NUMBER0126TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="2222374459285094" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">27</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;NUM0227JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="8174271864126417" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">27</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;NUMBER0227TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="8203716686019489" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">28</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;NUM0328JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="9585801148598979" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">28</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;NUMBER0328TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="7026005101158055" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">29</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;NUM0429JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="2833661709535926" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">29</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;NUMBER0429TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="835647965224688" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">30</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;NUM0530JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="6116663487782403" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">30</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;NUMBER0530TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="2103575861101931" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">31</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;NUM0631JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="2615696914858758" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">31</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;NUMBER0631TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="3441062517080899" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">32</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;NUM0732JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="609590143142612" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">32</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;NUMBER0732TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="3997983536435035" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">33</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;NUM0833JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="9864290499265685" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">33</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;NUMBER0833TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="4713443622623939" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">34</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;NUM0934JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="6233987651177543" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">34</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;NUMBER0934TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="2038345968056687" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">35</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;NUM0035JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="9416841642259376" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">35</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;NUMBERZERO35TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="9260308329640039" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">36</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;QUEST36JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="9868668023000701" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">36</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;QUEST36TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="4915933962773868" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">37</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;EXCLAM37JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="335932317984553" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">37</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;EXCLAM37TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="6389691691601089" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">38</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;PLUS38JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="500168800251157" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">38</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;PLUS38TOM&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="7551822980842358" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">39</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">&quot;NEGATIVE39JILL&quot;</param>
+                </action>
+                <action id="3" name="Set at XY" sid="2145539582907363" type="ArrayAbecedaryKey">
+                    <param id="0" name="X">39</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">&quot;NEGATIVE39TOM&quot;</param>
+                </action>
+                <action disabled="1" id="-12" name="Set group active" sid="5264060385923959" type="System">
+                    <param id="0" name="Group name">&quot;CREATE-GUI&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5924356275282829">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6297954340251356" type="AbecedaryActKey">
+                    <param id="0" name="Instance variable">ID</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">36</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="7111721078450896" type="AbecedaryActKey">
+                    <param id="0" name="Frame number">KeyPressed</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Gets soundToPlay stored value, and just takes the value(as text) which is the same as the file. That is, if A has soundToPlay=A, it will play file A</comment>
+        <event-block sid="8136282479675573">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9359199014679554" type="Touch">
+                    <param id="0" name="Object">AbecedaryActKeyButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="3024686748455362" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="9341037915473766" type="System">
+                    <param id="0" name="Variable">KeyPressed</param>
+                    <param id="1" name="Value">AbecedaryActKeyButton.ID</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="8727761925278976">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="7824306941423331" type="AbecedaryActKeyButton">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">KeyPressed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="4356838807996166" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">ArrayAbecedaryKey.At(KeyPressed, floor(random(0,2)))</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="1270001285199568">
+                            <conditions>
+                                <condition id="-18" name="Is in preview" sid="375275749748228" type="System" />
+                            </conditions>
+                            <actions>
+                                <action disabled="1" id="-15" name="Set visible" sid="2727561562974723" type="AbecedaryActText">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="1871599297602113" type="AbecedaryActText">
+                                    <param id="0" name="Text">&quot;X: &quot; &amp; KeyPressed</param>
+                                </action>
+                                <action disabled="1" id="-15" name="Set visible" sid="1029458188190537" type="AbecedaryActText2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="3412991432815768" type="AbecedaryActText2">
+                                    <param id="0" name="Text">&quot;Array: &quot; &amp; ArrayAbecedaryKey.At(KeyPressed, 0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Click CUADROTE starts Random sequence, that way EaseTween plays uninterrupted</comment>
+        <event-block sid="9444740709232071">
+            <conditions>
+                <condition id="3" name="On touched object" sid="7950698585326875" type="Touch">
+                    <param id="0" name="Object">AbecedaryActCuadrote</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="6077057660706176" type="System">
+                    <param id="0" name="Group name">&quot;RandomAbecedaryGroup&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action behavior="LiteTween" disabled="1" id="10" name="Start" sid="131699882744661" type="AbecedaryActCuadrote">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Random sequence: Creates and stores random number</comment>
+        <event-group description="" inactive="1" sid="3579546176134167" title="RandomAbecedaryGroup">
+            <sub-events>
+                <event-block sid="5518475149824693">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="2982201314379107" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5926884001078906" type="System">
+                            <param id="0" name="Variable">KeyPressed</param>
+                            <param id="1" name="Value">(floor(random(35,0)))</param>
+                        </action>
+                        <action id="0" name="Set text" sid="554375941745934" type="AbecedaryActText2">
+                            <param id="0" name="Text">ArrayAbecedaryKey.At(KeyPressed, floor(random(0, 2)))</param>
+                        </action>
+                        <action id="0" name="Set text" sid="4121548216107782" type="AbecedaryActText">
+                            <param id="0" name="Text">&quot;X: &quot; &amp; KeyPressed</param>
+                        </action>
+                        <action id="6" name="Stop" sid="5961867139670997" type="Audio">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                        </action>
+                        <action id="7" name="Play (by name)" sid="6678187931494244" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">ArrayAbecedaryKey.At(KeyPressed, floor(random(0, 2)))</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="1426995382464093" type="System">
+                            <param id="0" name="Group name">&quot;RandomAbecedaryGroup&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

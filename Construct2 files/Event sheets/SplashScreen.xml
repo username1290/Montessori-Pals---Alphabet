@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SplashScreen</name>
+    <events>
+        <include>CODESHEET</include>
+        <event-block sid="7662605875697592">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="8700441692720628" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="9799308837877746" type="TiledLoadPercent">
+                    <param id="0" name="Width">clamp(0, (loadingprogress * 600), 600)&#x0D;&#x0A;</param>
+                </action>
+                <action disabled="1" id="-5" name="Set width" sid="9531437900075918" type="TiledLoadPercent">
+                    <param id="0" name="Width">600 * loadingprogress</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2265000788028004">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="5381446824815419" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3273171552626681" type="System">
+                    <param id="0" name="Layout">HOME</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="9804068108199807">
+            <conditions>
+                <condition id="1" name="Preloads complete" sid="152433188496695" type="Audio" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6588516741634042" type="System">
+                    <param id="0" name="Layout">HOME</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
