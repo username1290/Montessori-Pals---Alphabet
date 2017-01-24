@@ -1,5 +1,5 @@
 # Montessori-Pals---Alphabet
 Construct 2 - full code of project, enjoy!
 
-If you want to test it, just upload the exported iOS project to
+It works flawlessly if you use Phonegap to build it
 https://build.phonegap.com/
